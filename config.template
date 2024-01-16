@@ -10,18 +10,21 @@ Host gitlab.economicmodeling.com
   HostName gitlab.economicmodeling.com
   IdentityFile ~/.ssh/[work-key-file-name]
 
-Host github.com/ThomasJBlack/*
+Host github.com/*
   HostName github.com
   IdentityFile ~/.ssh/[work-key-file-name]
 
 # personal
-Host gitlab.com/ThomasJBlack/*
+Host gitlab.com/*
   HostName gitlab.com
   IdentityFile ~/.ssh/[personal-key-file-name]
 
-Host github.com/ThomasJBlack/*
+Host github.com/*
   HostName github.com
   IdentityFile ~/.ssh/[personal-key-file-name]
 
-Match host github.com exec "test %p = '/[personal user route]/*'"
+Match host github.com exec "test %p != '/[work route]/*'"
+  IdentityFile ~/.ssh/[personal-key-file-name]
+
+Match host github.com exec "test %p != '/[work route]/*'"
   IdentityFile ~/.ssh/[personal-key-file-name]
