@@ -4,6 +4,7 @@
  - config.template
    - replace [work-key-file-name]
    - replace [personal-key-file-name]
+   - replace [personal user route]
  - .gitconfig.template
    - replace [First Last]
    - replace [work directory]

@@ -14,9 +14,6 @@ Host github.com/ThomasJBlack/*
   HostName github.com
   IdentityFile ~/.ssh/[work-key-file-name]
 
-Match host github.com exec "test %p = '/Lightcast-io/*'"
-  IdentityFile ~/.ssh/[work-key-file-name]
-
 # personal
 Host gitlab.com/ThomasJBlack/*
   HostName gitlab.com
@@ -26,5 +23,5 @@ Host github.com/ThomasJBlack/*
   HostName github.com
   IdentityFile ~/.ssh/[personal-key-file-name]
 
-Match host github.com exec "test %p != '/Lightcast-io/*'"
+Match host github.com exec "test %p = '/[personal user route]/*'"
   IdentityFile ~/.ssh/[personal-key-file-name]
