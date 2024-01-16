@@ -239,4 +239,4 @@ export PUPPETEER_EXECUTABLE_PATH=$(which chromium)
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
-# HISTFILE="$HOME/.zsh_history.$(echo $$)" # @James, you'll want this uncommmented
+# HISTFILE="$HOME/.zsh_history.$(echo $$)"
