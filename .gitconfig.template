@@ -1,0 +1,8 @@
+[user]
+  name = [First Last]
+
+[includeIf "gitdir:~/[work directory]/"]
+  path = ~/[work directory]/.gitconfig
+
+[includeIf "gitdir:~/[personal directory]/"]
+  path = ~/[personal directory]/.gitconfig
