@@ -1,18 +1,6 @@
 # Development-Environment-Configuration
 
 ## SSH
- - config.template
-   - replace [work-key-file-name]
-   - replace [personal-key-file-name]
-   - replace [personal user route]
- - .gitconfig.template
-   - replace [First Last]
-   - replace [work directory]
-   - replace [personal directory]
- - [work]/.gitconfig.personal.template 
-   - replace [work email]
- - [personal]/.gitconfig.personal.template 
-   - replace [personal email]
  - .zshrc.template
    - replace USER_PATH=[first.last]
    - replace [work-key-file-name]

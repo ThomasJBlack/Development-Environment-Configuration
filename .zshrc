@@ -5,13 +5,13 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
+# export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+# ZSH_THEME="robbyrussell"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -73,17 +73,12 @@ CASE_SENSITIVE="true"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(
-  git
-  zsh-autosuggestions
-  fzf
-)
 
-source $ZSH/oh-my-zsh.sh
+# source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-USER_PATH=[first.last]
+USER_PATH=thomas.black
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -111,28 +106,28 @@ USER_PATH=[first.last]
 
 # Mouse
 # Terminal prompt
-function git-dirty {
-  st=$(git status 2>/dev/null | tail -n 1)
-  if [[ $st != "nothing to commit, working tree clean" && $st != "" ]]; then
-  echo " *"
-  fi
-}
-parse_git_branch() {
-  git branch 2>/dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
-}
-function proml() {
-  autoload -U colors && colors
-  NAME='Mouse'
-  PS1="%F{green}$NAME ➾ 📚 %F{blue}%~ 🌱%F{yellow}\$(parse_git_branch)\$(git-dirty)
-⛏️ %F{white}  "
-  PS4='+ '
-}
-proml
+# function git-dirty {
+#   st=$(git status 2>/dev/null | tail -n 1)
+#   if [[ $st != "nothing to commit, working tree clean" && $st != "" ]]; then
+#   echo " *"
+#   fi
+# }
+# parse_git_branch() {
+#   git branch 2>/dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+# }
+# function proml() {
+#   autoload -U colors && colors
+#   NAME='Mouse'
+#   PS1="%F{green}$NAME ➾ 📚 %F{blue}%~ 🌱%F{yellow}\$(parse_git_branch)\$(git-dirty)
+# ⛏️ %F{white}  "
+#   PS4='+ '
+# }
+# proml
 
 # source .zshrc
 function s {
   if [[ $1 = "z" ]]; then
-  source ~/.zshrc &&
+  source ~/d/Development-Environment-Configuration/.zshrc &&
     echo "sourced ~/.zshrc"
   fi
 }
@@ -168,44 +163,20 @@ function dato() {
   echo "Setting \"NEXT_DATOCMS_ENVIRONMENT\" variable to: $1"
 }
 
-# git ssh keys
-work_key_path="~/.ssh/[work-key-file-name]"
-personal_key_path="~/.ssh/[personal-key-file-name]"
-
 alias add-ssh-key="ssh-add --apple-use-keychain $work_key_path"
-alias add-personal-ssh-key="ssh-add --apple-use-keychain $personal_key_path"
 
 #  fixes the disappearing ssh key issue after computer restart
 function () {
   add-ssh-key
-  add-personal-ssh-key
 }
-
-export GITLAB_TOKEN_OPA=[token]
-export GITLAB_TOKEN_MW=[token]
-export AIRTABLE_TOKEN=[token]
-
-function iterm2\_print\_user\_vars() {
-  iterm2\_set\_user\_var gitProject $(basename $(git rev-parse --show-toplevel 2>/dev/null) 2>/dev/null)
-}
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 # Paths
 export PATH=/opt/homebrew/bin:$PATH
-
-# fzf fuzzy search plugin
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-export FZF_COMPLETION_TRIGGER='~~'
-
-export FZF_DEFAULT_OPS="--extended"
-export FZF_DEFAULT_COMMAND='fd --type f'
-export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /opt/homebrew/bin/terraform terraform
 
 # Put this somewhere in the ~/.zshrc file
-
 # MAINTAINER TODO: get this figured out
 # load-nvmrc() {
 #   local nvmrc_path="$(pwd -P)/.nvmrc"
