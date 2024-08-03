@@ -165,16 +165,18 @@ function dato() {
 
 alias add-ssh-key="ssh-add --apple-use-keychain $work_key_path"
 
-#  fixes the disappearing ssh key issue after computer restart
-function () {
-  add-ssh-key
-}
+# #  fixes the disappearing ssh key issue after computer restart
+# function () {
+#   add-ssh-key
+# }
 
 # Paths
 export PATH=/opt/homebrew/bin:$PATH
 
-autoload -U +X bashcompinit && bashcompinit
-complete -o nospace -C /opt/homebrew/bin/terraform terraform
+# autoload -U +X bashcompinit && bashcompinit
+# complete -o nospace -C /opt/homebrew/bin/terraform terraform
+autoload -Uz compinit
+compinit
 
 # Put this somewhere in the ~/.zshrc file
 # MAINTAINER TODO: get this figured out
