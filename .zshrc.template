@@ -136,15 +136,16 @@ function s {
 }
 
 # git
-alias kk='git checkout'
-alias gs='git status'
 alias ga='git add'
-alias gc='git commit'
-alias gp='git pull'
-alias gpu='git push'
-alias gcm='git commit -am'
 alias gb='git branch'
 alias gbd='git branch -D'
+alias kk='git checkout'
+alias gc='git commit'
+alias gd='git diff'
+alias gcm='git commit -am'
+alias gp='git pull'
+alias gpu='git push'
+alias gs='git status'
 
 # local dev aliases
 alias app='npm run app'
