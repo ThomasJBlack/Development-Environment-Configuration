@@ -149,6 +149,12 @@ alias gs='git status'
 
 # local dev aliases
 alias app='npm run app'
+alias pi='pnpm install'
+alias ni='npm install'
+alias nrl='npm run lint'
+alias nrd='npm run dev'
+alias yrd='yarn run dev'
+alias yrs='yarn run start'
 
 # terraform
 alias ti='terraform init'
