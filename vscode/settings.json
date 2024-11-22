@@ -1,0 +1,297 @@
+{
+    "workbench.welcomePage.walkthroughs.openOnInstall": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "prettier.arrowParens": "avoid",
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "prettier.printWidth": 160,
+    "prettier.embeddedLanguageFormatting": "off",
+    "prettier.endOfLine": "auto",
+    "prettier.requireConfig": true,
+    "explorer.confirmDelete": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "explorer.confirmDragAndDrop": false,
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "files.associations": {
+        "*.js": "javascriptreact",
+        "*.md": "markdown"
+    },
+    "editor.showUnused": true,
+    "editor.minimap.enabled": false,
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[scss]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.formatOnSaveMode": "modifications",
+    "turboConsoleLog.includeFileNameAndLineNum": false,
+    "turboConsoleLog.insertEnclosingFunction": false,
+    "turboConsoleLog.insertEnclosingClass": false,
+    "turboConsoleLog.logMessagePrefix": "asdf 🧐",
+    "turboConsoleLog.quote": "`",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "editor.guides.bracketPairs": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.detectIndentation": true,
+    "editor.lightbulb.enabled": "off",
+    "editor.fontFamily": "'Dank Mono', Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontLigatures": false,
+    "editor.rulers": [80],
+    "editor.snippetSuggestions": "inline",
+    "editor.suggest.showKeywords": false,
+    "editor.wordBasedSuggestions": "off",
+    "editor.suggest.localityBonus": true,
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.suggestSelection": "recentlyUsed"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.suggestSelection": "recentlyUsed"
+    },
+    "editor.tabSize": 4,
+    "editor.renderWhitespace": "trailing",
+    "editor.glyphMargin": false,
+    "files.exclude": {
+        "**/.env": false,
+        "USE_GITIGNORE": true
+    },
+    "files.defaultLanguage": "{activeEditorLanguage}",
+    "javascript.validate.enable": false,
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/coverage": true,
+        "**/dist": true,
+        "**/build": true,
+        "**/.build": true,
+        "**/.gh-pages": true
+    },
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit"
+    },
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact"
+    ],
+    "eslint.options": {
+        "overrideConfig": {
+        "rules": {
+            "no-debugger": "off"
+        }
+        }
+    },
+    // "terminal.integrated.shellArgs.osx": ["-l"],
+    "terminal.integrated.scrollback": 10000,
+    "explorer.openEditors.visible": 0,
+    "editor.lineNumbers": "on",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.startupEditor": "none",
+    "workbench.panel.defaultLocation": "right",
+    "workbench.editor.limit.enabled": true,
+    "workbench.editor.limit.perEditorGroup": false,
+    "workbench.editor.limit.value": 10,
+    "debug.javascript.codelens.npmScripts": "never",
+    "breadcrumbs.enabled": true,
+    "local-history.absolute": true,
+    // "local-history.path": "/Users/thomas-black/.vscode-history",
+    "grunt.autoDetect": "off",
+    "npm.runSilent": true,
+    "gulp.autoDetect": "off",
+    "editor.formatOnPaste": false,
+    "spellright.language": ["en"],
+    "spellright.documentTypes": ["markdown", "plaintext", "mdx"],
+    "spellright.parserByClass": {
+        "mdx": {
+        "parser": "markdown"
+        }
+    },
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.smoothScrolling": true,
+    "php.suggest.basic": false,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "eslint.packageManager": "npm",
+    "npm.packageManager": "npm",
+    "editor.acceptSuggestionOnEnter": "on",
+    "editor.tokenColorCustomizations": {
+        "textMateRules": []
+    },
+    "editor.fontSize": 15,
+    "terminal.integrated.fontSize": 14,
+    "editor.cursorBlinking": "solid",
+    "editor.inlineSuggest.enabled": true,
+    "redhat.telemetry.enabled": false,
+    "emmet.showAbbreviationSuggestions": false,
+    "emmet.showExpandedAbbreviation": "never",
+    // "github.copilot.enable": {
+    //     "*": true,
+    //     "yaml": false,
+    //     "plaintext": false,
+    //     "markdown": false,
+    //     "jsonc": false,
+    //     "mdx": true,
+    //     "typescriptreact": true
+    // },
+    "git.autofetch": true,
+    "deno.lint": false,
+    "[prisma]": {
+        "editor.defaultFormatter": "Prisma.prisma"
+    },
+    "git.path": "/opt/homebrew/bin/git",
+    "[ignore]": {
+        "editor.defaultFormatter": "foxundermoon.shell-format"
+    },
+    "vsintellicode.modelDownloadPath": "",
+    "terminal.integrated.env.windows": {
+    
+    },
+    "eslint.nodeEnv": "",
+    "npm.exclude": "",
+    "[shellscript]": {
+        "editor.defaultFormatter": "foxundermoon.shell-format"
+    },
+    "editor.guides.bracketPairsHorizontal": true,
+    "[dotenv]": {
+        "editor.defaultFormatter": "foxundermoon.shell-format"
+    },
+    "editor.gotoLocation.multipleTypeDefinitions": "goto",
+    "editor.gotoLocation.multipleDefinitions": "goto",
+    "snyk.advanced.cliPath": "/Users/thomas.black/Library/Application Support/snyk-ls/snyk-macos",
+    "snyk.yesWelcomeNotification": false,
+    "[terraform]": {
+        "editor.defaultFormatter": "hashicorp.terraform"
+    },
+    "snyk.trustedFolders": [
+        "/Users/thomas.black/dev/andon-v2-infra",
+        "/Users/thomas.black"
+    ],
+    "[twig]": {
+        "editor.defaultFormatter": "mblode.twig-language-2"
+    },
+    "editor.definitionLinkOpensInPeek": true,
+    "eslint.codeActionsOnSave.rules": null,
+    "snyk.severity": {
+        "medium": false,
+        "low": false
+    },
+    "jupyter.showOutlineButtonInNotebookToolbar": false,
+    "workbench.editor.wrapTabs": true,
+    "workbench.layoutControl.enabled": false,
+    "window.commandCenter": false,
+    "window.title": "${activeEditorShort} ⚔️ ${rootName}",
+    "emmet.preferences": {},
+    "javascript.preferences.quoteStyle": "double",
+    "workbench.editor.splitInGroupLayout": "vertical",
+    "tabnine.experimentalAutoImports": true,
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "notebook.lineNumbers": "on",
+    "zenMode.hideLineNumbers": false,
+    "window.zoomLevel": 1,
+    "editor.accessibilitySupport": "off",
+    "cSpell.userWords": [
+        "economicmodeling",
+        "Keychain",
+        "Lightcast",
+        "publickey"
+    ],
+    "settingsSync.ignoredSettings": [
+        "-security.promptForLocalFileProtocolHandling",
+        "-security.promptForRemoteFileProtocolHandling"
+    ],
+    "security.promptForLocalFileProtocolHandling": false,
+    "[markdown]": {
+        "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+    },
+    "workbench.activityBar.location": "hidden",
+    "workbench.editorAssociations": {
+        "*.copilotmd": "vscode.markdown.preview.editor",
+        "{git,gitlens}:/**/*.{md,csv,svg}": "default"
+    },
+    // "playwright.reuseBrowser": true
+    /**/
+    // egghead
+    /*
+    "editor.fontSize": 20,
+    "terminal.integrated.fontSize": 15,
+    "scm.diffDecorations": "none",
+    "editor.lineNumbers": "off",
+    "workbench.editor.showTabs": false,
+    "workbench.statusBar.visible": false,
+    "editor.cursorBlinking": "solid",
+    "window.zoomLevel": 1,
+    "breadcrumbs.enabled": false,
+    "editor.parameterHints.enabled": false,
+    "editor.suggestOnTriggerCharacters": false,
+    "explorer.decorations.colors": false,
+    "explorer.decorations.badges": false,
+    "workbench.activityBar.visible": false
+    /**/
+    // build react apps
+    /*
+    "editor.fontSize": 20,
+    "terminal.integrated.fontSize": 15,
+    "scm.diffDecorations": "none",
+    "workbench.statusBar.visible": false,
+    "editor.cursorBlinking": "solid",
+    "window.zoomLevel": -1,
+    "editor.parameterHints.enabled": false,
+    "editor.suggestOnTriggerCharacters": false,
+    "explorer.decorations.colors": false,
+    "explorer.decorations.badges": false
+    /**/
+    // workshop
+    /*
+    "editor.fontSize": 16,
+    "terminal.integrated.fontSize": 16,
+    "scm.diffDecorations": "none",
+    "workbench.statusBar.visible": false,
+    "editor.cursorBlinking": "solid",
+    "explorer.decorations.colors": false,
+    "explorer.decorations.badges": false,
+    "workbench.activityBar.visible": false,
+    "workbench.editor.limit.value": 100
+    /**/
+    // Talk
+    /*
+    "editor.fontSize": 22,
+    "terminal.integrated.fontSize": 20,
+    "scm.diffDecorations": "none",
+    "editor.lineNumbers": "off",
+    "workbench.statusBar.visible": false,
+    "workbench.activityBar.visible": false,
+    "editor.cursorBlinking": "solid",
+    "window.zoomLevel": 2,
+    "breadcrumbs.filePath": "off",
+    "breadcrumbs.symbolPath": "off",
+    "editor.parameterHints.enabled": false,
+    "editor.quickSuggestions": {
+        "comments": "off",
+        "strings": "off",
+        "other": "off"
+    },
+    "editor.suggestOnTriggerCharacters": false,
+    "explorer.decorations.colors": false,
+    "explorer.decorations.badges": false
+    /**/
+}
